@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".fragments.update.UpdateFragment">
+
+
+    <EditText
+        android:id="@+id/edtUpdateFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:textSize="16dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:paddingHorizontal="10dp"/>
+    <EditText
+        android:id="@+id/edtUpdateLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:textSize="16dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:paddingHorizontal="10dp"/>
+    <EditText
+        android:id="@+id/edtUpdateAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:textSize="16dp"
+        android:inputType="number"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:paddingHorizontal="10dp"/>
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="#018F07"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:paddingHorizontal="10dp"/>
+
+
+
+</LinearLayout>

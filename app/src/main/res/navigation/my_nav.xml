@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.roomdbkotlin.fragments.list.ListFragment"
+        android:label="List"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/listFragmentToAddFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/listFragmentToUpdateFragment"
+            app:destination="@id/updateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.roomdbkotlin.fragments.add.AddFragment"
+        android:label="Add User"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/addFragmentToListFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.example.roomdbkotlin.fragments.update.UpdateFragment"
+        android:label="fragment_update"
+        tools:layout="@layout/fragment_update" >
+        <action
+            android:id="@+id/updateFragmentToListFragment"
+            app:destination="@id/listFragment" />
+        <argument
+            android:name="currentUser"
+            app:argType="com.example.roomdbkotlin.model.User" />
+    </fragment>
+</navigation>

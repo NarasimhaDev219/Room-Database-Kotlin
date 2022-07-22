@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+
+    <EditText
+        android:id="@+id/edtFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:textSize="16dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:paddingHorizontal="10dp"/>
+    <EditText
+        android:id="@+id/edtLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:textSize="16dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:paddingHorizontal="10dp"/>
+    <EditText
+        android:id="@+id/edtAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:textSize="16dp"
+        android:inputType="number"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:paddingHorizontal="10dp"/>
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="#018F07"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:paddingHorizontal="10dp"/>
+
+
+</LinearLayout>
